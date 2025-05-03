@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #fee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 2;
+    justify-content: center;
+}
+
+.menu ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fee;
+    padding: 10px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a:hover {
+    border-bottom: 4px solid #000;
+    transition: 0.4s;
+}
+
+.body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(/assets/img/backround.jpg);
+    background-size: cover;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.heading p {
+    margin: 20px 0;
+}
+
+.tours {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.places {
+    text-align: center;
+    margin: 20px;
+    flex-basis: 30%;
+}
+
+.places img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.places h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: white;
+    margin: 10px 0;
+}
+
+.places a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.places img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.places a:hover {
+    background-color: #000;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.section {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.destinations {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.destination-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
+    background-color: #4682b4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 12px;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fee;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .tours {
+        flex-direction: column;
+    }
+
+    .places {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 24px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+.destination p, h3 {
+    color: #fee;
+}
+
+
